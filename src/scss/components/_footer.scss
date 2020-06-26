@@ -1,0 +1,159 @@
+/********* Marketing Font *********/
+// .footer-wrapper,
+// .product-footer {
+//     h1, 
+//     h2, 
+//     h4, 
+//     h4, 
+//     h5, 
+//     h6 {
+//       font-family: $marketing-font-bold;
+//     }
+//     p,
+//     li {
+//       font-family: $marketing-font-regular;
+//     }
+ 
+// }
+
+/*********************************
+  Onbording footer
+*********************************/
+
+.footer-wrapper {
+    background: $secondary-color;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    z-index: 10000 !important;
+    .navbar-item, a {
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .navbar-item {
+        span {
+            font-weight: 700;
+        }
+    }
+    .navbar-item {
+        padding: 0px 5px;
+        margin: 0px 15px;
+    }
+    .logo-footer {
+        padding: 10px;
+        width: 80px; 
+        img {
+            width: 100%;
+        }
+    }
+    .logo-footer:first-child {
+        width: 160px;
+    }
+    .footer-social {
+        a {
+            padding: 0px 5px;
+        }
+    }
+    .nav-divider {
+        width: 2px;
+        background: rgba(#fff, 0.20);
+        height: 30px;  
+    }
+
+}
+
+// mobile display 
+@media screen and (max-width: 780px){
+    .footer-wrapper {
+        .footer-divider-hide,
+        .footer-blog,
+        .footer-social {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footer-wrapper {
+        .dv-footer-logo {
+            display: none;
+        }
+    }
+}
+
+
+/*********************************
+  Product footer
+*********************************/
+.product-footer {
+    background: $secondary-color !important;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-copyright {
+    margin-bottom: 20px;
+    p   {
+        font-size: 13px;
+        color: $white;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    span {
+        a {
+            color: $white;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+}
+
+ul.footer-social-item {
+    display: flex;
+    a {
+        color: $white;
+    }
+    .footer-blog {
+        font-weight: 600;
+    }
+    li {
+        margin-left: 10px;
+    }
+    i {
+        color: white;
+    }
+}
+
+.footer-divider {
+    width: 2px;
+    background: rgba(#fff, 0.25);
+    height: 20px;  
+}
+
+@media screen and (min-width: 780px){
+    .product-footer {
+        flex-direction: row;
+    }
+    .footer-copyright {
+        margin-bottom: 0px;
+        text-align: left;
+    }
+}
+
+.dashboard-footer {
+    position: inherit;
+}
+
+
+

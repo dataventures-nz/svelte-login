@@ -1,0 +1,228 @@
+/********* Marketing Font *********/
+// .main-navigation {
+ 
+//     h1, 
+//     h2, 
+//     h4, 
+//     h4, 
+//     h5, 
+//     h6 {
+//       font-family: $marketing-font-bold;
+//     }
+//     p,
+//     li {
+//       font-family: $marketing-font-regular;
+//     }
+ 
+// }
+
+
+
+/*********************************
+  Main Navigation
+*********************************/
+.main-navigation {
+    background: $secondary-color;
+    .nav-logo {
+        margin-left: 20px;
+    }
+}
+
+.navbar-item img {
+  max-height: none;
+}
+
+.nav-app-icon,
+.navbar-link-icon {
+  width: 35px; 
+  img {
+    width: 100%;
+  } 
+}
+
+
+#userpic {
+  border-radius: 30px;
+  width: 30px;
+}
+
+.navbar-dropdown.is-boxed {
+  margin-top: 4px;
+  border-radius: $border-radius;
+}
+
+.nav-app-icon {
+  width: 200px;
+  text-align: right;
+  justify-content: flex-end;
+  img {
+    padding: 3px;
+    padding-right: 0px;
+    width: 25px !important;
+  }
+}
+
+.navbar-item {
+  padding: 0px 10px 0px 8px;
+  // height: 52px;
+}
+
+
+.navbar-item-icon {
+  opacity: 0.5;
+  transition: opacity 0.15s;
+}
+
+.nav-item-app {
+  margin-bottom: 10px;
+  .nav-item-dropdown-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    img {
+      width: 100% !important;
+    }
+  }
+  p {
+    padding-top: 5px;
+    font-size: 16px;
+  }
+}
+
+.nav-item-app:last-child {
+  margin-bottom: -5px;
+}
+
+.navbar-item-icon:hover {
+  opacity: 1;
+}
+
+.nav-item-dropdown-icon {
+  i {
+    color: $font-color;
+    margin-right: 10px;
+  }
+}
+
+.navbar-link {
+  background: none !important;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+.navbar-link:hover {
+  background: none !important;
+}
+
+.nav-divider {
+    width: 2px;
+    background: rgba(#fff, 0.10);
+    height: 20px;
+}
+
+// Hamburger Menu
+.navbar-burger {
+  span {
+    background: white;
+  }
+}
+
+// Dropdown menu content
+.navbar-dropdown {
+  padding: 15px;
+}
+
+.navbar-link-icon {
+  display: none;
+}
+
+.navbar-end:last-child {
+  padding-right: 10px;
+}
+
+.nav-mobile-heading {
+  text-decoration: underline;
+  padding-left: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.product-dropdown-heading {
+  display: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.nav-item-hide-mobile {
+  display: none;
+}
+
+@media screen and ( min-width: 769px ){
+  .navbar-link-icon,
+  .nav-item-hide-mobile {
+    display: flex;
+  }
+  .nav-mobile-heading {
+    display: none;
+  }
+  .product-dropdown-heading {
+    display: block;
+  }
+  .nav-item-app {
+    p {
+      padding-top: 0px;
+    }
+  }
+}
+
+// Accounts details
+.account-details:hover {
+  background: none !important;
+}
+
+.account-user-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-item-mobile {
+  display: flex;
+}
+
+/*********************************
+  Product Navigation
+*********************************/
+
+.product-logo-wrapper {
+  display: flex;
+  align-items: center;
+  .nav-divider {
+    margin: 0px 10px;
+  }
+}
+
+.nav-logo-product {
+  text-align: left;
+  max-width: none;
+  width: 25px;
+  display: block !important;
+  // padding-top: 5px;
+}
+
+.product-heading {
+  p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-family: $marketing-font-semi-bold;
+  }
+}
+
+// view all products
+.nav-view-all {
+  font-weight: 600;
+  p {
+    text-align: center !important;
+  }
+}

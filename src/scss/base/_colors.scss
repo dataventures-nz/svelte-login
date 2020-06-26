@@ -1,0 +1,39 @@
+/* Brand colors */
+$brand-color: #EE6823; //dataventures orange
+$secondary-color: darken(#263A62, 5);
+$secondary-color-02: #263A62;
+// $secondary-color: #23374C;
+// $secondary-color: #181f31;
+$secondary-color-light: rgba( $secondary-color, .97 );
+
+$black: #000000;
+$white: #fff;
+
+/* Font colours */
+$font-color: #172b4d;
+$font-color-gray: #4a4a4a;
+$font-color-light: #767676;
+
+$link-color: #1264A3;
+$link-text-color: #1264A3;
+
+$bg-is-light-gray: rgb(46, 47, 51);
+
+$light-gray: #EBECF0;
+$lightest-gray: #EBECF0;
+
+/* Background Colors */
+.bg-dark {
+    // background: #202940;
+    // background: #263A62;;
+    background: lighten( #263A62, 3);
+}
+
+.bg-is-light-gray {
+    background: #EBECF0;
+}
+
+.bg-lightest-gray {
+    // background: #F9F9FB;
+    background: #F4F5F7;
+}

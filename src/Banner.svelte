@@ -9,11 +9,16 @@
     }
 </script>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<style type="text/scss">
+	@import 'scss/style.scss';
+</style>
+
+
+<nav class="navbar main-navigation" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <!-- <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-    </a> -->
+    <a class="navbar-item nav-logo" href="https://dataventures.nz/index.html">
+      <img src="https://assets.population-density.dataventures.nz/img/DV-logo-Horizontal-reverse.svg" role="presentation" class="sc-kjoXOD hpTAeq" alt="Data Ventures logo" width="170">
+    </a>
 
     <a role="button" class="navbar-burger burger" class:is-active={active} aria-label="menu" aria-expanded="false" on:click={toggle_active}>
       <span aria-hidden="true"></span>
@@ -23,12 +28,6 @@
   </div>
 
   <div class="navbar-menu" class:is-active={active}>
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-    </div>
-
     <div class="navbar-end">
       <div class="navbar-item">
         <Login></Login>

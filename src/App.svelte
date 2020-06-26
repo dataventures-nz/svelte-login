@@ -1,32 +1,19 @@
 <script>
-	export let name;
+	export let name
 	import Banner from './Banner.svelte'
 </script>
 
+<style type="text/scss">
+	@import 'scss/style.scss';
+</style>
+
+<svelte:body/>
+
 <main>
 	<Banner></Banner>
+
 	<h1>Hello {name}!</h1>
+	<h2>hi ho, it is a frog here</h2>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>

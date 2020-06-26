@@ -1,0 +1,296 @@
+/********* Marketing Font *********/
+// .signup-wrapper,
+// .login-form-wrapper,
+// .signup-footer-wrapper {
+//     h1, 
+//     h2, 
+//     h4, 
+//     h4, 
+//     h5, 
+//     h6 {
+//       font-family: $marketing-font-semi-bold;
+//     }
+//     p,
+//     li,
+//     textarea,
+//     input,
+//     form-control,
+//     input[type=text],
+//     placeholder  {
+//       font-family: $marketing-font-regular;
+//     }    
+// }
+ 
+.left-panel-content {
+    h1, 
+    h2, 
+    h4, 
+    h4, 
+    h5, 
+    h6 {
+      font-family: $marketing-font-semi-bold;
+    }
+    p{
+      font-family: $marketing-font-regular;
+    }  
+}
+
+/*********************************
+  Main wrapper
+*********************************/
+
+.signup-wrapper {
+    min-height: 100vh;
+    margin: 0px !important;
+
+}
+
+.left-panel,
+.login-container {
+    padding: 30px;
+}
+
+/*********************************
+  Sign in forms
+*********************************/
+
+.login-form-wrapper {
+    max-width: 500px;
+}
+
+.col-2-input {
+    display: flex;
+    input:nth-of-type(1) {
+        // border-radius: 3px 0px 0px 3px !important;
+        margin-right: 4px;
+    }
+    input:nth-of-type(2) {
+        margin-left: 4px;
+    }
+}
+
+
+/*********************************
+  Left Panel
+*********************************/
+.left-panel {
+    background: $secondary-color;
+    margin: 0px;
+    position: relative;
+    display: none;
+    .logo {
+        width: 200px;
+        img {
+            width: 100%;
+        }
+    }
+    .left-panel-content {
+        margin-top: 20vh;
+        padding-right: 30px;
+        h2 {
+            color: $brand-color;
+            font-size: 24px;
+            font-weight: 800;
+        }
+        p {
+            color: $white;
+            font-size: 20px;
+        }
+    }
+}
+
+.footer-divider {
+    width: 2px;
+    background: rgba(#fff, 0.25);
+    height: 20px;
+}
+
+.signup-footer-wrapper {
+    position: absolute;
+    bottom: 30px;
+    margin-top: 40px;
+}
+
+.signup-footer {
+    display: flex;
+    align-items: center;
+    .signup-footer-logo {
+        width: 65px;
+        img {
+            width: 100%;
+        }
+    }
+
+    li {
+        margin-right: 10px;
+        color: $white;
+        a,
+        i {
+            color: $white;
+        }
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .left-panel {
+        display: block;
+        padding-left: 60px;
+        padding-right: 40px;
+        .left-panel-content {
+            h2 {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 24px;
+                line-height: 1.4;
+            }
+            .tag-line {
+                margin-top: 30px;
+                font-family: $marketing-font-italic;
+                font-size: 20px;
+            }
+        }
+    }
+    // Form section
+    .login-form-wrapper {
+        padding-top: 5vh;
+    }
+    .form-heading {
+        font-size: 28px;
+    }
+    .logo-mobile,
+    .signup-footer-mobile,
+    .form-heading-mobile {
+        display: none;
+    }
+
+}
+
+
+/*********************************
+  Login section
+*********************************/
+.login-container {
+    min-height: 100vh;
+    background: #F9F9FB;
+    .logo-mobile {
+        width: 200px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.login-form-wrapper {
+    margin-top: 4vh;
+}
+
+.form-heading {
+    margin-bottom: 20px;
+}
+
+.create-account-tag {
+    font-size: 18px;
+    margin-top: 30px;
+    a {
+        font-weight: 600;
+        text-decoration: underline;
+        color: $link-color;
+    }
+}
+
+.signup-footer-wrapper-mobile {
+    margin-top: 60px;
+}
+
+
+.signup-footer-mobile {
+    li {
+        color: $font-color;
+            a, i {
+                color: $font-color;
+            }
+    }
+    li.footer-divider {
+        background: rgba($font-color, 0.2);
+    }
+}
+
+.mobile-hide {
+    display: none;
+}
+
+.form-heading-mobile {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+    a {
+        color: $link-color;
+        font-size: 13px !important;
+        transition: all 0.30s ease-in-out;
+    }
+}
+
+.forgot-password:hover {
+    a {
+        text-decoration: underline;
+    }
+}
+
+.acknowledgement {
+    font-size: 14px;
+    margin: 5px 0px 30px 0px;
+}
+
+@media screen and (min-width: 40em) {
+    .login-container {
+        padding-left: 90px;
+    }
+    .login-form-wrapper {
+        padding-top: 5vh;
+    }
+    .mobile-hide {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .sign-up-page,
+    .password-reset,
+    .reset-success-page,
+    .success-page,
+    .verify-email-page {
+        padding-top: 17vh;
+    }
+}
+
+// @media screen and (min-width: 640px) {
+//     .login-container {
+//         min-height: 100vh;
+//         background: #F9F9FB;
+//         padding-left: 90px;
+//         padding-top: 25vh;
+//     }
+//     .mobile-hide {
+//         display: block;
+//     }
+// }
+
+.verify-email {
+    width: 620px;
+    padding-top: 15vh;
+    .verify-msg {
+        margin-bottom: 30px;
+    }
+}
+
+#error-message {
+    margin-bottom: 15px;
+    // font-weight: 600;
+    color: red;
+}

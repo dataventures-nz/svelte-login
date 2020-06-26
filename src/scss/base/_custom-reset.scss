@@ -1,0 +1,59 @@
+// put all the focus and reset stuff in here
+
+
+::-ms-clear {
+    display:none;
+}
+
+input::-ms-clear {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+   
+button:focus {
+    // box-shadow: 0 0 0 2pt lighten( #1264A3, 35);
+    outline: none;
+}
+
+// Add scollbar on mobile devices in iOS devices
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: #ffffff; 
+}
+
+canvas{
+  cursor: pointer !important;
+}
+
+// Bulma reset
+.columns {
+    margin-top: 0;
+}
+
+html{
+    overflow-y: auto;
+  }
+  
+.hidden {
+    display: none;
+}

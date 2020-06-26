@@ -1,0 +1,41 @@
+.query {
+  color:green
+}
+
+.url {
+  color:darkred
+}
+
+.token {
+  color:grey;
+}
+
+.comment{
+  color:pink;
+}
+
+.head{
+font-weight: bold;
+padding-bottom:10px
+}
+.description{
+font-style: italic
+}
+
+.body{
+  color:black;
+}
+
+#main{
+  overflow-y: scroll;
+}
+
+section{
+  border-bottom: solid;
+}
+
+input{
+  height:auto;
+  width:auto;
+  -webkit-appearance:button;
+}

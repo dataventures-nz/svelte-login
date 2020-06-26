@@ -1,0 +1,125 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3818202, 2019-10-01T20:16:57-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Eina03-SemiBold by Extratype
+ * URL: https://www.myfonts.com/fonts/textaxis/eina/03-semibold/
+ *
+ * Webfont: Eina03-Regular by Extratype
+ * URL: https://www.myfonts.com/fonts/textaxis/eina/03-regular/
+ *
+ * Webfont: Eina03-Bold by Extratype
+ * URL: https://www.myfonts.com/fonts/textaxis/eina/03-bold/
+ *
+ * Webfont: Eina03-RegularItalic by Extratype
+ * URL: https://www.myfonts.com/fonts/textaxis/eina/03-regular-italic/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3818202
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2013 Textaxis. v 1.0 by I&#x00F1;igo Jerez. Barcelona. All rights reserved.
+ *
+ * &copy; 2020  MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://hello.myfonts.net/count/3a42da");
+
+@font-face {font-family: 'Eina03-SemiBold';src: url('webfonts/3A42DA_0_0.eot');src: url('webfonts/3A42DA_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A42DA_0_0.woff2') format('woff2'),url('webfonts/3A42DA_0_0.woff') format('woff');}
+
+
+@font-face {font-family: 'Eina03-Regular';src: url('webfonts/3A42DA_1_0.eot');src: url('webfonts/3A42DA_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A42DA_1_0.woff2') format('woff2'),url('webfonts/3A42DA_1_0.woff') format('woff');}
+
+
+@font-face {font-family: 'Eina03-Bold';src: url('webfonts/3A42DA_2_0.eot');src: url('webfonts/3A42DA_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A42DA_2_0.woff2') format('woff2'),url('webfonts/3A42DA_2_0.woff') format('woff');}
+
+
+@font-face {font-family: 'Eina03-RegularItalic';src: url('webfonts/3A42DA_3_0.eot');src: url('webfonts/3A42DA_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A42DA_3_0.woff2') format('woff2'),url('webfonts/3A42DA_3_0.woff') format('woff');}
+
+/* Marketing Typeface */
+$marketing-font-regular: 'Eina03-Regular', 'Source Sans Pro', sans-serif;
+$marketing-font-italic: 'Eina03-RegularItalic', 'Source Sans Pro', sans-serif;
+$marketing-font-semi-bold: 'Eina03-SemiBold', 'Source Sans Pro', sans-serif;
+$marketing-font-bold: 'Eina03-Bold', 'Source Sans Pro', sans-serif;
+
+/* Product Typeface */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+
+$main-font-family: 'Source Sans Pro', sans-serif;
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $main-font-family;
+  // font-family: 'Eina03-Regular', 'Source Sans Pro', sans-serif;
+  color: $font-color;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: .83em;
+}
+h6 {
+  font-size: .67em;
+}
+
+
+// h1::selection,
+// h2::selection,
+// h3::selection,
+// h4::selection,
+// h5::selection,
+// h6::selection,
+// p::selection,
+// a::selection,
+// li::selection,
+// span::selection {
+//   color: white;
+//   background: $brand-color !important;
+// }
+
+p,
+li,
+text  {
+  font-family: $main-font-family;
+  color: $font-color;
+}
+
+strong {
+  color: $font-color;
+}
+
+.link-text {
+    font-weight: 800;
+    color: $link-text-color !important;
+    text-decoration: underline;
+}
+
+.lead {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 40em){
+  .lead {
+    font-size: 20px;
+  }
+}

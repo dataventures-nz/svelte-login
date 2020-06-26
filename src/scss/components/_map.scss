@@ -1,0 +1,42 @@
+.mapboxgl-canvas{
+  top:0px;
+  left:0px;
+  // border: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.mapboxgl-ctrl-geocoder{
+  border-radius: 40px;
+}
+
+.mapboxgl-ctrl-top-left{
+  left: 15px;
+}
+.mapboxgl-ctrl-bottom-left{
+  left: 15px;
+}
+
+.mapboxgl-ctrl-icon.mapboxgl-ctrl-zoom-out {
+  border-radius: 0 0 30px 30px !important;
+}
+
+.mapboxgl-ctrl-icon.mapboxgl-ctrl-compass {
+      display: none !important;
+}
+
+// .mapboxgl-popup{
+//   opacity:0.85
+// }
+
+.mapboxgl-popup-content{
+  text-align: center;
+  font-size: 18px !important;
+  padding: 10px 15px 10px 15px !important;
+  font-weight: 600 !important;
+}
+
+
+// Tool tip
+// .tooltip {
+//   font-size: 18px !important;
+//   padding: 3px 15px 0px 15px !important;;
+// }

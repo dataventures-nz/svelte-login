@@ -1,0 +1,22 @@
+section {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.content-page, 
+.content-body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
+.product-footer {
+    flex-shrink: 0;
+}

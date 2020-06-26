@@ -1,0 +1,44 @@
+
+input {
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgba($black, $alpha: 0.1);
+    border-radius: $border-radius;
+    transition: all 0.30s ease-in-out;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=text] {   
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+}
+
+input:hover {
+    outline: none;
+    border: 1px solid $link-color;
+    border-radius: $border-radius;
+}
+
+.form-control {
+    font-size: 14px !important;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border-radius: $border-radius;
+    border: 1px solid $link-color;
+}
+
+// input:focus::placeholder {
+//     color: transparent;
+// }
+
+
+

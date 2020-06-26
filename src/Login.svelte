@@ -12,8 +12,8 @@
         if (query.includes("code=") && query.includes("state=")) {
             await auth0.handleRedirectCallback();
             window.history.replaceState({}, document.title, "/");
-            updateUI() //force rerender
         }
+        updateUI() //force rerender
     }
 
     export const logout = async () => {
@@ -31,13 +31,20 @@
     export let user = null
 
     generateAuth0(async () => {
-        user = await auth0.getUser()
+        let isAuthenticated = await auth0.isAuthenticated()
+        user = isAuthenticated? await auth0.getUser() : null
     })
 </script>
 
+<style type="text/scss">
+	@import 'scss/style.scss';
+</style>
+
 <div class="navbar-item has-dropdown is-hoverable">
     {#await auth0Promise}
-        wait
+        <a class="navbar-link is-arrowless navbar-link-icon" href="#">
+            <img src="./svg/profile-icon.svg" alt="profile icon" id = userpic class="navbar-item-icon" on:click={login}>
+        </a>
     {:then}
         {#if user===null}
             <a class="navbar-link is-arrowless navbar-link-icon" href="#">
