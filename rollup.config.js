@@ -7,7 +7,6 @@ import json from '@rollup/plugin-json';
 import autoPreprocess from 'svelte-preprocess';
 import { scss } from 'svelte-preprocess';
 
-
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
