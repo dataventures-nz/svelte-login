@@ -28,35 +28,39 @@
         });
     };
 
-    generateAuth0(() => {auth0Promise = auth0Promise})
+    export let user = null
+
+    generateAuth0(async () => {
+        user = await auth0.getUser()
+    })
 </script>
 
-<div>
+<div class="navbar-item has-dropdown is-hoverable">
     {#await auth0Promise}
-        <p>initalising auth0</p>
-    {:then client}
-        {#await client.isAuthenticated()}
-            awaiting authentication information
-            {:then isAuthenticated}
-                {#if isAuthenticated}
-                    {#await client.getUser()}
-                        nothing
-                        {:then user}
-                        <img id="#userpic" alt="user" src={user.picture} on:click={logout} />
-                        {JSON.stringify(user)}
-                    {/await}
-                    {#await client.getTokenSilently()}
-                        nothing
-                        {:then token}
-                        {token}
-                    {/await}
-                {:else}
-                    <button id="btn-login" on:click="{login}">Log in</button>
-                {/if}
-            {:catch error}
-            <p style="color: red">can't determine if authenticated because {error.message}</p>
-        {/await}
-    {:catch error}
-        <p style="color: red">{error.message}</p>
+        wait
+    {:then}
+        {#if user===null}
+            <a class="navbar-link is-arrowless navbar-link-icon" href="#">
+                <img src="./svg/profile-icon.svg" alt="profile icon" id = userpic class="navbar-item-icon" on:click={login}>
+            </a>
+        {:else}
+            <a class="navbar-link is-arrowless navbar-link-icon" href="#">
+                <img src={user.picture} alt="profile icon" id = userpic class="navbar-item-icon">
+            </a>
+            <div class="navbar-dropdown is-boxed is-right">
+                <h2 class="nav-mobile-heading">Account</h2>
+                <a class="navbar-item account-details" href="#">
+                    <div>
+                        <p id="account-user-name" class="account-user-name">{user.nickname}</p>
+                        <p id="account-email" class="account-email">{user.email}</p>
+                    </div>
+                </a>
+                <hr class="navbar-divider">
+                <a id ="btn-logout" class="navbar-item navbar-item-mobile" href="#" on:click={logout}>
+                    <div class="nav-item-dropdown-icon"><i class="fas fa-sign-out-alt"></i></div>
+                    <p>Sign out</p>
+                </a>
+            </div>
+        {/if}
     {/await}
 </div>
