@@ -42,21 +42,21 @@
 
 <div class="navbar-item has-dropdown is-hoverable">
     {#await auth0Promise}
-        <a class="navbar-link is-arrowless navbar-link-icon" href="#">
+        <a class="navbar-link is-arrowless navbar-link-icon" href="#!">
             <img src="./svg/profile-icon.svg" alt="profile icon" id = userpic class="navbar-item-icon" on:click={login}>
         </a>
     {:then}
         {#if user===null}
-            <a class="navbar-link is-arrowless navbar-link-icon" href="#">
+            <a class="navbar-link is-arrowless navbar-link-icon" href="#!">
                 <img src="./svg/profile-icon.svg" alt="profile icon" id = userpic class="navbar-item-icon" on:click={login}>
             </a>
         {:else}
-            <a class="navbar-link is-arrowless navbar-link-icon" href="#">
+            <a class="navbar-link is-arrowless navbar-link-icon" href="#!">
                 <img src={user.picture} alt="profile icon" id = userpic class="navbar-item-icon">
             </a>
             <div class="navbar-dropdown is-boxed is-right">
                 <h2 class="nav-mobile-heading">Account</h2>
-                <a class="navbar-item account-details" href="#">
+                <a class="navbar-item account-details" href="#!">
                     <div>
                         <p id="account-user-name" class="account-user-name">{user.nickname}</p>
                         <p id="account-email" class="account-email">{user.email}</p>
