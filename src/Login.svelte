@@ -25,7 +25,7 @@
                     </div>
                 </a>
                 <hr class="navbar-divider">
-                <a id ="btn-logout" class="navbar-item navbar-item-mobile" href="#" on:click={logout}>
+                <a id ="btn-logout" class="navbar-item navbar-item-mobile" href="#!" on:click={logout}>
                     <div class="nav-item-dropdown-icon"><i class="fas fa-sign-out-alt"></i></div>
                     <p>Sign out</p>
                 </a>
